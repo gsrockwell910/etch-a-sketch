@@ -1,0 +1,1 @@
+This project will be my version of a virtual Etch-A-Sketch. this project will show off thenJavaScript and dom manipulation skills that I have built up so far from TOP. The project will be more like a sketch pad where you have a piece of "paper" and you can draw on it by moving your mouse around on the piece of "paper".
