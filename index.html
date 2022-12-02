@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html>
+<htmml>
     <head>
-        <title>Etch-a-Sketch</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js" defer></script>
+        <script src="script.js"></script>
+        <title>Etch-A-Sketch</title>
     </head>
     <body>
-        <div class="flex-container">
-            <div class="header">Etch-a-Sketch</div>
-            <div class="grid-container">
-                <div class="sketchPad"></div>
-                <div class="buttons">
+        <div class="flexbox">
+            <h3>Etch-A-Sketch</h3>
+            <div class="container">
+                <div class="canvas"></div>
+                <div class="button-container">
                     <button>Black</button>
-                    <button>Red</button>
+                    <button>Purple</button>
                     <button>Eraser</button>
                     <button>Reset</button>
                 </div>
-                <div class="slide-container">
-                    <input type="range" min="16" max="100" value="16" class="slider" id="gridSlider" onchange="changeSize(this.value)">
-                    <h3 class="sliderOutput">Grid Size: </h3>
+                <div class="size-selector">
+                <label for="grid-size">Grid Size: </label>
+                    <select name="sizes" id="grid-sizer">
+                        <option value="16">16 x 16</option>
+                        <option value="32">32 x 32</option>
+                        <option value="64">64 x 64</option>
+                        <option value="128">128 x 128</option>
+                    </select>
                 </div>
             </div>
         </div>
     </body>
-</html>
+</htmml>
