@@ -1,11 +1,30 @@
-* {
+*, *:before, *:after {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
 
-.sketchPad {
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    display: grid;
     width: 600px;
     height: 600px;
-    display: grid;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.size-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
