@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <title>Etch-A-Sketch</title>
     </head>
     <body>
@@ -12,14 +12,14 @@
             <div class="container">
                 <div class="canvas"></div>
                 <div class="button-container">
-                    <button>Black</button>
-                    <button>Purple</button>
-                    <button>Eraser</button>
-                    <button>Reset</button>
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('purple')">Purple</button>
+                    <button onclick="changeColor('white')">Eraser</button>
+                    <button onclick="resetCanvas()">Reset</button>
                 </div>
                 <div class="size-selector">
                 <label for="grid-size">Grid Size: </label>
-                    <select name="sizes" id="grid-sizer">
+                    <select name="sizes" id="grid-sizer" onchange="resizeCanvas(value)">
                         <option value="16">16 x 16</option>
                         <option value="32">32 x 32</option>
                         <option value="64">64 x 64</option>
