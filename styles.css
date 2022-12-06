@@ -1,7 +1,12 @@
-*, *:before, *:after {
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+body {
+    /* background-color: #4169e1; */
+    background-color: #00FFFF;
 }
 
 .flexbox {
@@ -12,19 +17,65 @@
 }
 
 .canvas {
+    margin-bottom: 18px;
+    margin-top: 8px;
+    background-color: #fff;
     display: grid;
     width: 600px;
     height: 600px;
+    border: 5px solid #7DF9FF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .size-selector {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button {
+    border-radius: 15px;
+    padding: 5px 10px;
+    border: 2px solid #5F04B4;
+    background: #00FFFF;
+    color: #5F04B4;
+    margin: 7px;
+}
+
+button:hover {
+    background: #5F04B4;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+}
+
+#grid-sizer {
+    border-radius: 15px;
+    padding: 5px 5px;
+    font-size: 0.75em;
+    border: 2px solid #5F04B4;
+    background: #00FFFF;
+    color: #5F04B4;
+    margin: 7px;
+}
+
+#grid-sizer:hover {
+    background: #5F04B4;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+}
+
+label {
+    font-size: 1.5em;
+    color: #5F04B4;
+}
+
+h1, h3 {
+    color: #5F04B4;  
+    margin: 8px;
 }
