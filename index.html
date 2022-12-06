@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<htmml>
+<html>
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js" defer></script>
         <title>Etch-A-Sketch</title>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <div class="flexbox">
             <h3>Etch-A-Sketch</h3>
+            <h1>Press space to pause</h1>
             <div class="container">
                 <div class="canvas"></div>
                 <div class="button-container">
@@ -19,7 +20,7 @@
                 </div>
                 <div class="size-selector">
                 <label for="grid-size">Grid Size: </label>
-                    <select name="sizes" id="grid-sizer" onchange="resizeCanvas(value)">
+                    <select name="sizes" id="grid-sizer" onchange="resizeCanvas(this.value)">
                         <option value="16">16 x 16</option>
                         <option value="32">32 x 32</option>
                         <option value="64">64 x 64</option>
@@ -29,4 +30,4 @@
             </div>
         </div>
     </body>
-</htmml>
+</html>
